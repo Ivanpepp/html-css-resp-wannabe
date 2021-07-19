@@ -75,11 +75,84 @@ img {
 
 @media screen and (max-width: 576px){
   
+      /* BLOCCO LEZIONI */
+      #lezioni .row>.left,
+      #lezioni .row>.right {
+        width: 100%;
+        padding: 20px 0;  
+      }
+      
+      #lezioni .row{
+        background-color: rgb(251, 248, 218);
+        padding: 0 30px;
+      }
+      #lezioni .row h1{
+        padding-top: 20px;
+      }
+      .row {
+        margin-top: 0;
+        padding-top: 10px;
+        font-size: 1.5em;
+        width: 100%;
+      }
+      .row h3{
+        margin: 0;
+      }
+
+    /* BLOCCO STEPS */
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      width: 100%;
+      padding: 20px 0;  
+    }
+
+    #steps .row h1{
+      margin-top: 0;
+      padding: 20px 0;
+      
+    }
+    #steps .row{
+      padding: 0 30px;
+      background-color: #f9f9f9;
+      
+    }
+    /* BLOCCO PERCHE */
+    #why .row{
+      background-color: rgb(251, 248, 218);
+      padding: 0 30px;
+      
+    }
+    #why .row h1{
+      margin-top: 0;
+      padding-top: 20px;
+      
+    }
+    #why .row>.first,
+    #why .row>.second,
+    #why .row>.third {
+      padding-top: 20px;
+      margin-top: 0;
+      
+    }
+    #why hr{
+      margin: 0;
+    }
+    #why .row img {
+      background-color: #428bca;
+      border-radius: 50%;
+      padding: 30px;
+      width: 20%;
+      height: 20%;
+    }
+
+}
+@media screen and (min-width: 577px) and (max-width:768px){
   /* BLOCCO LEZIONI */
   #lezioni .row>.left,
   #lezioni .row>.right {
-    width: 100%;
-    padding: 20px 0;  
+    width: 50%;
+    float: left;
   }
   
   #lezioni .row{
@@ -93,21 +166,23 @@ img {
     margin-top: 0;
     padding-top: 10px;
     font-size: 1.5em;
-    width: 576px;
+    width: 100%;
   }
-  .row,
-  h3{
+  .row h3{
     margin: 0;
   }
 
 /* BLOCCO STEPS */
 #steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  width: 100%;
+#steps .row>.central{
+  width: 50%;
   padding: 20px 0;  
 }
-
+#steps .row>.right {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
 #steps .row h1{
   margin-top: 0;
   padding: 20px 0;
